@@ -1,6 +1,9 @@
 ﻿/* Написать программу, которая из имеющегося массива строк формирует 
 новый массив из строк, длина которых меньше, либо равна 3 символам.*/
 
+Console.Write("Введите количество элементов массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+string[] stringArray = new string [m];
 
 void array(string[] stringArray)
 {
@@ -20,7 +23,7 @@ string[] symbol(string[] stringArray)
     }
     string[] result = new string[n];
     int j = 0;
-    for(int i; i < stringArray.Length; i ++)
+    for(int i = 0; i < stringArray.Length; i ++)
     {
         if (stringArray[i].Length <= 3)
         {
